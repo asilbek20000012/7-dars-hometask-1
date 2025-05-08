@@ -1,0 +1,372 @@
+.gallery-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-gallery {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  width: max-content; // Rasmlar siqilmasligi uchun
+  scroll-snap-type: x mandatory;
+
+  img {
+    width: 300px;
+    height: auto;
+    scroll-snap-align: start;
+    border-radius: 8px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+    .buttons {
+      margin-bottom: 88px;
+    }
+  }
+  .buttons .left-button {
+    cursor: pointer;
+    background-color: #030303;
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 0;
+    transition: 0.2s linear;
+  }
+  .buttons .left-button:hover {
+    background-color: #755CDE;
+  }
+  .buttons .left-button__img {
+    margin: auto;
+    display: block;
+  }
+  .buttons .right-button {
+    cursor: pointer;
+    background-color: #030303;
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 0;
+    transition: 0.2s linear;
+  }
+  .buttons .right-button:hover {
+    background-color: #755CDE;
+  }
+  .buttons .right-button__img {
+    margin: auto;
+    display: block;
+  }
+  
+  .disabled_swiper_button {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+  }
+  
+  .swiper-button-next {
+    display: none;
+  }
+  
+  .swiper-button-prev {
+    display: none;
+  }
+
+  
+  @media (min-width: 768px) {
+    .about__text {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .about__text {
+      width: 540px;
+      height: 84px;
+      font-size: 18px;
+      line-height: 28px;
+      margin-top: 34px;
+      margin-bottom: 32px;
+    }
+  }
+  .about__button {
+    width: 176px;
+    height: 44px;
+    border-radius: 28px;
+    border: none;
+    color: #FFF7F0;
+    background-color: #EB7565;
+    font-size: 14px;
+    transition: 0.2s linear;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .about__button:hover {
+    background-color: #F6A560;
+  }
+  @media (min-width: 768px) {
+    .about__button {
+      width: 228px;
+      height: 56px;
+      border-radius: 28px;
+      border: none;
+      color: #FFF7F0;
+      background-color: #EB7565;
+      font-size: 14px;
+      transition: 0.2s linear;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .about__button:hover {
+      background-color: #F6A560;
+    }
+  }
+  
+  .bottom {
+    box-sizing: border-box;
+    background-color: #030303;
+    width: 343px;
+    height: 352px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF7F0;
+    padding: 24px 48px;
+  }
+  @media (min-width: 768px) {
+    .bottom {
+      width: 690px;
+      height: 352px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .bottom {
+      width: 1100px;
+      height: 320px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  @media (min-width: 1200px) {
+    .bottom__wrapper {
+      width: 540px;
+      height: 159px;
+    }
+  }
+  .bottom__title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 24px;
+    
+  }
+  @media (min-width: 768px) {
+    .bottom__title {
+      font-size: 32px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .bottom__title {
+      font-size: 40px;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 25px;
+      padding-top: 2rem;
+    }
+  }
+  .bottom__text {
+    width: 295px;
+    height: 130px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF7F0;
+    line-height: 26px;
+    margin: 0;
+
+  }
+  @media (min-width: 768px) {
+    .bottom__text {
+      font-size: 18px;
+      width: 540px;
+      height: 84px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .bottom__text {
+      text-align: left;
+      line-height: 28px;
+    }
+  }
+  .bottom__button {
+    margin-top: 24px;
+    width: 176px;
+    height: 44px;
+    border-radius: 28px;
+    border: none;
+    color: #FFF7F0;
+    background-color: #EB7565;
+    font-size: 14px;
+    transition: 0.2s linear;
+    cursor: pointer;
+  }
+  .bottom__button:hover {
+    background-color: #F6A560;
+  }
+  @media (min-width: 768px) {
+    .bottom__button {
+      width: 228px;
+      height: 56px;
+      border-radius: 28px;
+      border: none;
+      color: #FFF7F0;
+      background-color: #EB7565;
+      font-size: 14px;
+      transition: 0.2s linear;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .bottom__button:hover {
+      background-color: #F6A560;
+    }
+  }
+  @media (min-width: 1200px) {
+    .bottom__button {
+      margin-top: 0px;
+      margin-right: 47px;
+    }
+  }
+  
+  .footer__wrapper {
+    margin-top: 16px;
+    width: 343px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 67px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 768px) {
+    .footer__wrapper {
+      width: 689px;
+      height: 64px;
+      margin-top: 56px;
+      margin-bottom: 56px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .footer__wrapper {
+      width: 1111px;
+      height: 64px;
+    }
+  }
+  .footer__logo {
+    width: 48px;
+    height: 48px;
+    background: url("./../starter-code/assets/logo.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 768px) {
+    .footer__logo {
+      width: 64px;
+      height: 64px;
+      background: url("./../starter-code/assets/logo.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .footer__button {
+    width: 176px;
+    height: 44px;
+    border-radius: 28px;
+    border: none;
+    color: #FFF7F0;
+    background-color: #030303;
+    font-size: 14px;
+    transition: 0.2s linear;
+    cursor: pointer;
+  }
+  .footer__button:hover {
+    background-color: #755CDE;
+  }
+  @media (min-width: 768px) {
+    .footer__button {
+      width: 228px;
+      height: 56px;
+      border-radius: 28px;
+      border: none;
+      color: #FFF7F0;
+      background-color: #030303;
+      font-size: 14px;
+      transition: 0.2s linear;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .footer__button:hover {
+      background-color: #755CDE;
+    }
+  }
+  
+  .swiper {
+    width: 310px;
+    height: 300px;
+  }
+  @media (min-width: 768px) {
+    .swiper {
+      width: 430px;
+      height: 360px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .swiper {
+      width: 540px;
+      height: 350px;
+    }
+  }
+  .swiper__title {
+    margin-top: 67px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  @media (min-width: 768px) {
+    .swiper__title {
+      font-size: 32px;
+      margin-top: 100px;
+      margin-bottom: 56px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .swiper__title {
+      margin-top: 88px;
+    }
+  }
+  .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .buttons {
+    margin-top: 32px;
+    margin-bottom: 67px;
+  }
+  @media (min-width: 768px) {
+    .buttons {
+      margin-bottom: 120px;
+    }
+  }
+  
